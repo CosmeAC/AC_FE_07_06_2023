@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <form name=" formulario" onsubmit="return validation()" action="confirmation.php" method="post">
+        <div class="row">
+            <label for="nombre">
+                Nombre:
+            </label>
+            <input type="text" onkeyup="ValidarNombre()" id="nombre" class="nombre" placeholder="introducir el Nombre" minlenght="2" maxlength="30" required pattern="[a-zA-Zº\s]+">
+            <div id="errorNombre" class="error"></div>
+        </div> 
+        <div class="row">
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" onkeyup="ValidarNombre()" id="email" class="email" placeholder="introducir el email" >
+            <div id="errorEmail" class="error"></div>
+        </div> 
+        <div class="row">
+            <label for="telf">
+                Telf:
+            </label>
+            <input type="telf" id="telf" class="telf" placeholder="introducir el telf" minlenght="9" maxlength="9" required pattern="[\d]+">
+            <div id="errorTelf" class="error"></div>
+        </div> 
+        <div class="row">
+            <label for="genero">
+                Genero:
+            </label>
+            <input type="radio" id="genero" class="genero" name="genero" value="Hombre"> Hombre
+            <input type="radio" id="genero" class="genero" name="genero" value="Mujer"> Mujer
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script></script>
+</body>
+</html>

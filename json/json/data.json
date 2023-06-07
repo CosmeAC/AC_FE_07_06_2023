@@ -1,0 +1,22 @@
+{
+    "nombre": "Alex",
+    "email": "acosme1998@gmail.com",
+    "edad" : "0",
+    "work" : [
+        {
+            "empresa": "tewooweb",
+            "ubicacion": "Barcelona",
+            "f_start": "2021-01-02"
+        },
+        {
+            "empresa": "Socistar caribe",
+            "ubicacion": "La Habana",
+            "f_start": "actualidad"
+        },
+        {
+            "empresa": "Geek&Chic",
+            "ubicacion": "Barcelona",
+            "f_start": "2021-01-02"
+        }
+    ]
+}
