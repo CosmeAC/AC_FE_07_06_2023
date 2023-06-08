@@ -4,43 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <div>
 
     </div>
-    <form name=" formulario" onsubmit="return validation()" action="confirmation.php" method="post">
+    <form name="formulario" onsubmit="return validation()" action="confirmation.php" method="post">
         <div class="row">
             <label for="nombre">
                 Nombre:
             </label>
-            <input type="text" onkeyup="ValidarNombre()" id="nombre" class="nombre" placeholder="introducir el Nombre" minlenght="2" maxlength="30" required pattern="[a-zA-Zº\s]+">
+            <input type="text" onkeyup="ValidarNombre()" id="nombre" class="nombre" name="nombre" placeholder="introducir el Nombre" minlength="2" required pattern="[a-zA-Zº\s]+">
             <div id="errorNombre" class="error"></div>
         </div> 
         <div class="row">
             <label for="email">
                 Email:
             </label>
-            <input type="email" onkeyup="ValidarNombre()" id="email" class="email" placeholder="introducir el email" >
+            <input type="email" onkeyup="ValidarEmail()" id="email" class="email" placeholder="introducir el email" >
             <div id="errorEmail" class="error"></div>
         </div> 
         <div class="row">
             <label for="telf">
                 Telf:
             </label>
-            <input type="telf" id="telf" class="telf" placeholder="introducir el telf" minlenght="9" maxlength="9" required pattern="[\d]+">
+            <input type="telf" onkeyup="ValidarTelf()" id="telf" class="telf" placeholder="introducir el telf" minlenght="9" maxlength="9" required pattern="[\d]+">
             <div id="errorTelf" class="error"></div>
         </div> 
+        <div class="row">
+            <label for="dninie">
+                DNI/NIE:
+            </label>
+            <input type="dninie" onkeyup="ValidarDninie()" id="dninie" class="telf" placeholder="introducir DNI/NIE">
+            <div id="errorDninie" class="error"></div>
+        </div>
         <div class="row">
             <label for="genero">
                 Genero:
             </label>
-            <input type="radio" id="genero" class="genero" name="genero" value="Hombre"> Hombre
-            <input type="radio" id="genero" class="genero" name="genero" value="Mujer"> Mujer
+            <div>            
+                <input type="radio" id="genero" class="genero" name="genero" value="Hombre"> Hombre
+                <input type="radio" id="genero" class="genero" name="genero" value="Mujer"> Mujer    
+            </div>
+        </div>
+        <div class="row">
+            <label>GRPD</label>
+            <div>
+                <label>
+                    <input type="checkbox" name="vicio" value="toros"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maiores suscipit recusandae, magnam quod a dolorem provident sed dignissimos? 
+                </label>
+            </div>
+        </div>
         <input type="submit" value="Enviar">
     </form>
 
-    <script></script>
+    <script src="./script.js"></script>
 </body>
 </html>
